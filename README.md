@@ -16,7 +16,7 @@
 
 `git clone https://github.com/JanTheHun/projor-nest-rethink-backend-template.git`
 
-- Generate code with (Projor)[https://projor.io/]
+- Generate code with [Projor](https://projor.io/)
 
 `npm run generate`
 
