@@ -1,0 +1,23 @@
+{
+  "name": "projor-full-stack-bundle-template",
+  "version": "0.0.1",
+  "description": "test to create folder structure with projor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "shx cp .entities projor-angular-material-frontend-template/.projor && shx cp .entities projor-nest-rethink-backend-template/.projor",
+    "generate:frontend": "npm run copy && projor generate -d %cd%/projor-angular-material-frontend-template",
+    "generate:backend": "npm run copy && projor generate -d %cd%/projor-nest-rethink-backend-template",
+    "install:frontend": "cd projor-angular-material-frontend-template && npm install",
+    "install:backend": "cd projor-nest-rethink-backend-template && npm install",
+    "install:full": "npm run install:frontend && npm run install:backend",
+    "generate": "npm run generate:frontend && npm run generate:backend",
+    "start:frontend": "cd frontend && npm run start",
+    "start:backend": "cd backend && npm run start"
+  },
+  "author": "jth",
+  "license": "ISC",
+  "devDependencies": {
+    "shx": "^0.3.4"
+  }
+}
