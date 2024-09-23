@@ -23,3 +23,10 @@
 - Install node modules for both app:
 
 `npm run install:full`
+
+## Run app
+
+- make sure Rethink is running
+- in a terminal run frontend
+- in an other terminal run backend
+- navigate to `http://localhost:4200` in your browser
